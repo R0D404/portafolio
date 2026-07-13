@@ -3,98 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería en Tecnologías de la Información e Innovación Digital | UPChiapas</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Tienda tenis- Inicio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
 
-
-    <header class="main-header">
-        <div class="container">
-            <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
-            <h1>ITIID - UPChiapas</h1>
-            <nav class="main-nav">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="pages/plan-estudios.html">Plan de Estudios</a>
-                <a href="pages/contacto.html">Contacto</a>
-            </nav>
+    <header>
+        <div class="logo"><h1>AKINA<span>STYLE</span></h1>
+        
         </div>
+        <nav>
+            <ul>
+                <li><a>Inicio</a></li>
+                
+                <li><a href="./PAGINAS/pagina2.html">Catálogo</a></li>
+                <li><a href="./PAGINAS/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-
-        <div class="contenedor-carrusel">
-  <div class="carrusel">
-    <div class="item-carrusel" id="img1">
-      <img src="https://www.researchgate.net/publication/317713311/figure/fig1/AS:507617919619072@1498036951746/FIGURA-1-Entrada-principal-de-la-UPChiapas.png" alt="Paisaje de montaña">
-    </div>
-    <div class="item-carrusel" id="img2">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2U5oAueZ_QKDykcMLzBs7Xtcw1FubCbc4iZyXORbNRVhycWw-vbeMa_E&s=10" alt="Bosque y luz natural">
-    </div>
-    <div class="item-carrusel" id="img3">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YP859bmInM6OwGMP7NwrC8Irpgms1jcRU9g_mNzu7Q&s" alt="Atardecer en el lago">
-    </div>
-     <div class="item-carrusel" id="img4">
-      <img src="https://api.upchiapas.edu.mx/images/5085/0f9eaffab4afb158500df72feac1f647c62f669b.jpg" alt="Atardecer en el lago">
-    </div>
-  </div>
-
-  <div class="navegacion-carrusel">
-    <a href="#img1">1</a>
-    <a href="#img2">2</a>
-    <a href="#img3">3</a>
-  </div>
-</div>
-
-
-        <section class="info-section">
-            
-            <h2>Descripción de la Carrera</h2>
-            <p>El egresado de la Ingeniería en Tecnologías de la Información e Innovación Digital cuenta con las competencias profesionales necesarias para su desempeño en el campo laboral, en el ámbito local, regional y nacional.</p>
-            <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
+    <main>
+        <section>
+            <div class="carousel-container">
+                <button class="carousel-btn btn-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    
+                    <div class="carousel-slide">
+                        <img src="./IMAGENES/donovan.jpg" alt="Nuevos Air Max Spectrum" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>Donovan Michell</h2>
+                            <p>nuevos tenis donovan michell</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./IMAGENES//carru.jpeg" alt="Nuevos Air Max Spectrum" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>Donocan MIchell</h2>
+                            <p>Tenis DOnovan MIchell</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn btn-next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
         </section>
 
-        <section class="info-section">
-            <h2>Perfil de Ingreso</h2>
-            <p>El aspirante debe contar con gusto por las matemáticas, lógica de programación, capacidad de análisis, espíritu innovador y el deseo de resolver problemas complejos mediante el uso de la tecnología.</p>
-            <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
+        <section>
+            <h2 class="section-title">Modelos Más Vendidos</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-tag">TOP 1</div>
+                    <div class="card-img"><img src="./IMAGENES/images" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Adidas Campus</h3>
+                        <p class="price">$2200</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 2</div>
+                    <div class="card-img"><img src="./IMAGENES/images (1).jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Running Adidas1</h3>
+                        <p class="price">$2100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 3</div>
+                    <div class="card-img"><img src="./IMAGENES/rosa.jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Pink Adidas</h3>
+                        <p class="price">Precio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 4</div>
+                    <div class="card-img"><img src="./IMAGENES/herden.jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Harden Vol.9</h3>
+                        <p class="price">$3000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 5</div>
+                    <div class="card-img"><img src="./IMAGENES/ANT.jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Antony Edwars</h3>
+                        <p class="price">$1500</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 6</div>
+                    <div class="card-img"><img src="./IMAGENES/trae.jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Trae Young 3</h3>
+                        <p class="price">$3500</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 7</div>
+                    <div class="card-img"><img src="./IMAGENES/donovan.jpg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Donovan MIchell</h3>
+                        <p class="price">$1800</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">TOP 8</div>
+                    <div class="card-img"><img src="./IMAGENES/harden2.jpeg" alt="Classic Street Brown"></div>
+                    <div class="card-info">
+                        <h3>Harden Vol6</h3>
+                        <p class="price">$2400</p>
+                    </div>
+                </div>
+                
+                
+            </div>
         </section>
 
-        <section class="info-section">
-            <h2>Perfil de Egreso</h2>
-            <p>El egresado de la Ingeniería en Tecnologías de la Información e Innovación Digital se distingue por poseer las competencias profesionales esenciales que respaldan su desempeño con éxito en el dinámico entorno laboral, abarcando tanto el ámbito local como el regional y nacional. Este perfil integral no solo se ajusta a las demandas actuales del sector, sino que también anticipa y se adapta a las transformaciones y desafíos emergentes de la Licenciatura en Ingeniería en Tecnologías de la Información e Innovación Digital.</p>
-            <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
+        <section>
+            <h2 class="section-title">Ofertas Imperdibles</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-tag" style="background: red;">-30%</div>
+                    <div class="card-img"><img src="./IMAGENES/don.jpeg" alt="Runner Blue Pro"></div>
+                    <div class="card-info">
+                        <h3>D.O.N</h3>
+                        <p class="price"><span class="old-price">$3000</span>$2200</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag" style="background: red;">-30%</div>
+                    <div class="card-img"><img src="./IMAGENES/issue6.jpeg" alt="Runner Blue Pro"></div>
+                    <div class="card-info">
+                        <h3>Isssues 6</h3>
+                        <p class="price"><span class="old-price">$3000</span>$2200</p>
+                    </div>
+                </div>
+                
+            </div>
         </section>
 
-        <section class="info-section">
-            <h2>Campo Laboral</h2>
-            <ul>
-                <li>Desarrollador Front-End, Back-End o Full Stack.</li>
-                <li>Desarrollador de aplicaciones móviles.</li>
-                <li>Líder de proyectos de Tecnologías de la Información.</li>
-                <li>Director de proyectos de innovación digital.</li>
-                <li>Ingeniero de redes digitales.</li>
-                <li>Ingeniero de cómputo en la nube y virtualización.</li>
-                <li>Ingeniero DevOps.</li>
-            </ul>
-            <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
-        </section>
-
-        <section class="info-section">
-            <h2>Competencias</h2>
-            <p> Desarrollar soluciones tecnológicas a través de lenguajes de programación estructurada y programación orientada a objetos, herramientas de desarrollo asistido de software, usabilidad y pruebas, fundamentos de redes de área local, sistemas operativos, medidas de seguridad informática para contribuir a la eficiencia y productividad en diferentes contextos con un enfoque de impulso al desarrollo social, ambiental y de economía socialmente responsable.
-
-Desarrollar soluciones tecnológicas multiplataforma de software web y móvil utilizando programación orientada a objetos, frameworks, bases de datos, estándares de calidad y diseño para resolver problemas del sector productivo, con un enfoque de inclusión, compromiso con la responsabilidad social, equidad social y de género, excelencia, vanguardia, innovación social e interculturalidad.
-
-Desarrollar soluciones innovadoras de integración de tecnologías de la información mediante metodologías y herramientas de seguridad informática, internet de las cosas, sistemas inteligentes y administración de proyectos; con base en las normas y estándares aplicables para atender las áreas de oportunidad, resolver las necesidades y optimizar los procesos y recursos de diversos sectores.</p>
-                <img src="imagenes/logo-universidad-politecnica-de-chiapas.webp" alt="">
+        <section>
+            <h2 class="section-title">Nuestras Sucursales</h2>
+            <div class="sucursales-container">
+                <div class="sucursal-card">
+                    <h3>Suchiapa Centro</h3>
+                    <p>📍 Av.Principal col.Centro</p>
+                    <p>⏱️8:00am - 8:00 pm lunes-viernes</p>
+                </div>
+                <div class="sucursal-card">
+                    <h3>Plaza Norte</h3>
+                    <p>📍 centro comercial, plaza ambar</p>
+                    <p>⏱️8:00am-8:00pm</p>
+                </div>
+                <div class="sucursal-card">
+                    <h3>Plaza Sur</h3>
+                    <p>📍 Centro comercial, plaza sur</p>
+                    <p>⏱️8:00am - 8:00 pm lunes-viernes</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 Universidad Politécnica de Chiapas. Ingeniería en Tecnologías de la Información e Innovación Digital.</p>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.adidas.mx/" target="_blank">🏬Adidas</a>
+            <a href="https://www.facebook.com/adidas/?locale=es_LA" target="_blank">📷Facebook</a>
+            <a href="https://www.tiktok.com/@adidas?lang=es" target="_blank">📽️TikTok</a>
+        </div>
+        <p>Examen Unidad 3 Tópicos. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="/JS/script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>

@@ -1,27 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('form-contacto');
-    const responseMessage = document.getElementById('form-response');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevenir el envío tradicional de HTML
+let currentSlide = 0;
+const track = document.getElementById('carouselTrack');
+const slides = document.querySelectorAll('.carousel-slide');
 
-            // Captura de datos (por si deseas conectarlo a una API)
-            const formData = {
-                nombre: document.getElementById('nombre').value,
-                correo: document.getElementById('correo').value,
-                telefono: document.getElementById('telefono').value,
-                mensaje: document.getElementById('mensaje').value
-            };
+function moveCarousel(direction) {
+    if (!track || slides.length === 0) return;
 
-            console.log('Datos listos para enviar:', formData);
+    currentSlide += direction;
+    
+    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
 
-            // Simulación de respuesta de backend exitosa
-            responseMessage.textContent = `¡Gracias por tu interés, ${formData.nombre}! Hemos recibido tu solicitud. Pronto nos comunicaremos contigo al correo ${formData.correo}.`;
-            responseMessage.className = 'hidden-message success';
+if (track) {
+    setInterval(() => moveCarousel(1), 5000);
+}
 
-            // Limpiar el formulario
-            contactForm.reset();
-        });
+// --- 2. LÓGICA DE FILTROS DEL CATÁLOGO ---
+function filterCatalog(category, event) {
+    // Manejo del estado visual del botón activo
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
     }
-});
+
+    // Filtrado de productos basado en las clases del HTML
+    const products = document.querySelectorAll('.product-item');
+    
+    products.forEach(product => {
+        // Muestra el producto si tiene la clase correspondiente (damas o caballeros)
+        if (product.classList.contains(category)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
