@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+<body>
+     <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../IMAGENES/logo.png" alt="">
+            </div>
+            <nav class="nav-links">
+                <a href="../index.html" class="active">Home</a>
+                <a href="../PAGINAS/menu.html">Menú</a>
+            </nav>
+            <a href="#" class="btn-register">Registrarse</a>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="container text-center">
+            <h1 class="menu-title">Menú</h1>
+            
+            <!-- Filtro interactivo de Bebidas -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="cold">Bebidas Frías</button>
+                <button class="filter-btn" data-filter="hot">Bebidas Calientes</button>
+            </div>
+
+            <!-- Grid de productos -->
+            <div class="products-grid">
+                
+                <!-- ================= BEBIDAS FRÍAS (8 Productos) ================= -->
+                <!-- Frío 1 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/frio1.jpeg" alt="Frappé de Caramelo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Frappé Caramelo</h3>
+                        <p class="product-desc">Café 40% | Leche 40% | Hielo</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 2 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO2.jpeg" alt="Iced Americano">
+                    </div>
+                    <div class="product-info">
+                        <h3>Iced Americano</h3>
+                        <p class="product-desc">Espresso 50% | Agua 50% | Hielo</p>
+                        <p class="product-price">$6.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 3 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO3.jpeg" alt="Cold Brew">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cold Brew</h3>
+                        <p class="product-desc">Café de extracción lenta 100%</p>
+                        <p class="product-price">$7.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 4 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FREIO4.jpeg" alt="Iced Latte">
+                    </div>
+                    <div class="product-info">
+                        <h3>Iced Latte</h3>
+                        <p class="product-desc">Café 30% | Leche 70% | Hielo</p>
+                        <p class="product-price">$8.00</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 5 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO5.jpeg" alt="Affogato">
+                    </div>
+                    <div class="product-info">
+                        <h3>Affogato</h3>
+                        <p class="product-desc">Espresso caliente | Helado de Vainilla</p>
+                        <p class="product-price">$9.00</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 6 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO6.jpeg" alt="Iced White Mocha">
+                    </div>
+                    <div class="product-info">
+                        <h3>Iced White Mocha</h3>
+                        <p class="product-desc">Mocha Blanco 30% | Leche 70%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 7 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO7.jpeg" alt="Soda Italiana">
+                    </div>
+                    <div class="product-info">
+                        <h3>Soda Italiana</h3>
+                        <p class="product-desc">Jarabe de Fresa | Agua Mineral | Hielo</p>
+                        <p class="product-price">$5.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Frío 8 -->
+                <div class="product-card cold">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/FRIO8.jpeg" alt="Iced Chai">
+                    </div>
+                    <div class="product-info">
+                        <h3>Iced Chai Tea</h3>
+                        <p class="product-desc">Té Chai 50% | Leche 50% | Hielo</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+
+                <!-- ================= BEBIDAS CALIENTES (4 Productos) ================= -->
+                <!-- Caliente 1 -->
+                <div class="product-card hot" style="display: none;">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/HOT1.jpeg" alt="Espresso">
+                    </div>
+                    <div class="product-info">
+                        <h3>Espresso Intenso</h3>
+                        <p class="product-desc">Extracción pura de grano fino 100%</p>
+                        <p class="product-price">$5.00</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Caliente 2 -->
+                <div class="product-card hot" style="display: none;">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/HOT2.jpeg" alt="Cappuccino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cappuccino</h3>
+                        <p class="product-desc">Café 50% | Leche vaporizada 50%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Caliente 3 -->
+                <div class="product-card hot" style="display: none;">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/HOT3.jpeg" alt="Americano Caliente">
+                    </div>
+                    <div class="product-info">
+                        <h3>Americano Clásico</h3>
+                        <p class="product-desc">Espresso doble 40% | Agua caliente 60%</p>
+                        <p class="product-price">$6.00</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Caliente 4 -->
+                <div class="product-card hot" style="display: none;">
+                    <div class="product-img-wrapper">
+                        <img src="../IMAGENES/HOT4.jpeg" alt="Latte Macchiato">
+                    </div>
+                    <div class="product-info">
+                        <h3>Latte Macchiato</h3>
+                        <p class="product-desc">Leche cremada 70% | Espresso 30%</p>
+                        <p class="product-price">$8.00</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+ <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-socials">
+                <h4>Síguenos en nuestras redes</h4>
+                <div class="social-icons">
+                    <!-- Espacios limpios de img para los iconos de redes sociales -->
+                    <a href="#" class="social-link"><img src="" alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contáctanos</h4>
+                <p>+1 202-918-2132</p>
+                <p>beanscene@mail.com</p>
+                <p>www.beanscene.com</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../JSS/menu.js"></script>
+    
+</body>
+</html>

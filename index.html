@@ -1,178 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda tenis- Inicio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-
-    <header>
-        <div class="logo"><h1>AKINA<span>STYLE</span></h1>
-        
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="IMAGENES/logo.png" alt="">
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="PAGINAS/menu.html">Menú</a>
+            </nav>
+            <a href="#" class="btn-register">Registrarse</a>
         </div>
-        <nav>
-            <ul>
-                <li><a>Inicio</a></li>
-                
-                <li><a href="./PAGINAS/pagina2.html">Catálogo</a></li>
-                <li><a href="./PAGINAS/carrito.html">Carrito</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="carousel-container">
-                <button class="carousel-btn btn-prev" onclick="moveCarousel(-1)">&#10094;</button>
-                <div class="carousel-track" id="carouselTrack">
-                    
-                    <div class="carousel-slide">
-                        <img src="./IMAGENES/donovan.jpg" alt="Nuevos Air Max Spectrum" class="carousel-img">
-                        <div class="carousel-content">
-                            <h2>Donovan Michell</h2>
-                            <p>nuevos tenis donovan michell</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="./IMAGENES//carru.jpeg" alt="Nuevos Air Max Spectrum" class="carousel-img">
-                        <div class="carousel-content">
-                            <h2>Donocan MIchell</h2>
-                            <p>Tenis DOnovan MIchell</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn btn-next" onclick="moveCarousel(1)">&#10095;</button>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Modelos Más Vendidos</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <div class="card-tag">TOP 1</div>
-                    <div class="card-img"><img src="./IMAGENES/images" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Adidas Campus</h3>
-                        <p class="price">$2200</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 2</div>
-                    <div class="card-img"><img src="./IMAGENES/images (1).jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Running Adidas1</h3>
-                        <p class="price">$2100</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 3</div>
-                    <div class="card-img"><img src="./IMAGENES/rosa.jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Pink Adidas</h3>
-                        <p class="price">Precio</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 4</div>
-                    <div class="card-img"><img src="./IMAGENES/herden.jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Harden Vol.9</h3>
-                        <p class="price">$3000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 5</div>
-                    <div class="card-img"><img src="./IMAGENES/ANT.jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Antony Edwars</h3>
-                        <p class="price">$1500</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 6</div>
-                    <div class="card-img"><img src="./IMAGENES/trae.jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Trae Young 3</h3>
-                        <p class="price">$3500</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 7</div>
-                    <div class="card-img"><img src="./IMAGENES/donovan.jpg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Donovan MIchell</h3>
-                        <p class="price">$1800</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag">TOP 8</div>
-                    <div class="card-img"><img src="./IMAGENES/harden2.jpeg" alt="Classic Street Brown"></div>
-                    <div class="card-info">
-                        <h3>Harden Vol6</h3>
-                        <p class="price">$2400</p>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Ofertas Imperdibles</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <div class="card-tag" style="background: red;">-30%</div>
-                    <div class="card-img"><img src="./IMAGENES/don.jpeg" alt="Runner Blue Pro"></div>
-                    <div class="card-info">
-                        <h3>D.O.N</h3>
-                        <p class="price"><span class="old-price">$3000</span>$2200</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-tag" style="background: red;">-30%</div>
-                    <div class="card-img"><img src="./IMAGENES/issue6.jpeg" alt="Runner Blue Pro"></div>
-                    <div class="card-info">
-                        <h3>Isssues 6</h3>
-                        <p class="price"><span class="old-price">$3000</span>$2200</p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Nuestras Sucursales</h2>
-            <div class="sucursales-container">
-                <div class="sucursal-card">
-                    <h3>Suchiapa Centro</h3>
-                    <p>📍 Av.Principal col.Centro</p>
-                    <p>⏱️8:00am - 8:00 pm lunes-viernes</p>
-                </div>
-                <div class="sucursal-card">
-                    <h3>Plaza Norte</h3>
-                    <p>📍 centro comercial, plaza ambar</p>
-                    <p>⏱️8:00am-8:00pm</p>
-                </div>
-                <div class="sucursal-card">
-                    <h3>Plaza Sur</h3>
-                    <p>📍 Centro comercial, plaza sur</p>
-                    <p>⏱️8:00am - 8:00 pm lunes-viernes</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://www.adidas.mx/" target="_blank">🏬Adidas</a>
-            <a href="https://www.facebook.com/adidas/?locale=es_LA" target="_blank">📷Facebook</a>
-            <a href="https://www.tiktok.com/@adidas?lang=es" target="_blank">📽️TikTok</a>
+    <section id="home" class="hero-section">
+    
+    <button class="slider-arrow prev-arrow" id="prevBtn">&lt;</button>
+    
+   
+    <div class="hero-slider">
+       
+        <div class="slide active">
+            <img src="IMAGENES/images2.jpeg" alt="Hero Background Coffee 1">
         </div>
-        <p>Examen Unidad 3 Tópicos. Todos los derechos reservados.</p>
-    </footer>
+       
+        <div class="slide">
+            <img src="IMAGENES/images1.jpeg" alt="Hero Background Coffee 2">
+        </div>
+       
+        <div class="slide">
+            <img src="IMAGENES/images3.jpeg" alt="Hero Background Coffee 3">
+        </div>
+        <div class="slide">
+            <img src="IMAGENES/images4.jpeg" alt="Hero Background Coffee 3">
+        </div>
+    </div>
+    
+    <!-- Botón Derecho -->
+    <button class="slider-arrow next-arrow" id="nextBtn">&gt;</button>
+</section>
 
-    <script src="./JS/script.js"></script>
+    <section class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Café de Chiapas</h2>
+                <p>
+                    El café de Chiapas es una denominación de origen (DO) que regula y protege el café de especie arábica producido en el estado de Chiapas, al sur de México. El cultivo del café para la exportación arrancó con fuerza a partir de 1840 en el Soconusco, una región de amplias llanuras próximo al océano Pacífico, en el contexto de la economía exportadora mexicana de la era del capitalismo liberal (1870-1911). En el siglo XX, las plantaciones se extendieron hacia otros lugares del estado, como Los Altos y la zona de Comitán.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="IMAGENES/images5.jpeg" alt="Silueta de taza con granos de café">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container text-center">
+            <h2>Nuestras mezclas</h2>
+            <p class="section-subtitle">Descubre con nosotros todos los sabores del café. Siempre hay una nueva taza que vale la pena probar.</p>
+            
+            
+
+            <!-- Grid de productos -->
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="IMAGENES/images6.jpeg" alt="Cappuccino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cappuccino</h3>
+                        <p class="product-desc">Café 50% | Leche 50%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="IMAGENES/images7.avif" alt="Chai Latte">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chai Latte</h3>
+                        <p class="product-desc">Café 50% | Leche 50%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="IMAGENES/images8.jpeg" alt="Macchiato">
+                    </div>
+                    <div class="product-info">
+                        <h3>Macchiato</h3>
+                        <p class="product-desc">Café 50% | Leche 50%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="IMAGENES/images9.jpeg" alt="Espresso">
+                    </div>
+                    <div class="product-info">
+                        <h3>Espresso</h3>
+                        <p class="product-desc">Café 50% | Leche 50%</p>
+                        <p class="product-price">$8.50</p>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ¿POR QUÉ SOMOS DIFERENTES? -->
+    <section class="features-section">
+        <div class="container text-center">
+            <h2>¿Por qué somos diferentes?</h2>
+            <div class="features-grid">
+                <!-- Característica 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="IMAGENES/granos.jpeg" alt="Icono Granos">
+                    </div>
+                    <h3>Los mejores granos</h3>
+                </div>
+                <!-- Característica 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="IMAGENES/calidad.jpeg" alt="Icono Calidad">
+                    </div>
+                    <h3>La mejor Calidad</h3>
+                </div>
+                <!-- Característica 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="IMAGENES/aroma.jpeg" alt="Icono Aroma">
+                    </div>
+                    <h3>Un aroma Extraordinario</h3>
+                </div>
+                <!-- Característica 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="IMAGENES/precio.png" alt="Icono Precio">
+                    </div>
+                    <h3>Precio Accesible</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-socials">
+                <h4>Síguenos en nuestras redes</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=es_LA"><img src="IMAGENES/face.jpeg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="IMAGENES/insta.jpeg" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/?hl=es"><img src="IMAGENES/yutu.png" alt="YouTube"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contáctanos</h4>
+                <p>962 695 2356</p>
+                <p>compraCafe@mail.com</p>
+                <p>www.compraCafe.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JSS/script.js"></script>
+    
 </body>
 </html>
